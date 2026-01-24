@@ -1,1 +1,1 @@
-import{a}from"/build/_shared/chunk-EHKTJCZC.js";import"/build/_shared/chunk-5XNNEDOD.js";import"/build/_shared/chunk-MRS6DOXX.js";import"/build/_shared/chunk-J3PKFMLQ.js";import"/build/_shared/chunk-OZE3FFNP.js";export default a();
+import{a}from"/shapes-of-uncertainty/build/_shared/chunk-EHKTJCZC.js";import"/shapes-of-uncertainty/build/_shared/chunk-5XNNEDOD.js";import"/shapes-of-uncertainty/build/_shared/chunk-MRS6DOXX.js";import"/shapes-of-uncertainty/build/_shared/chunk-J3PKFMLQ.js";import"/shapes-of-uncertainty/build/_shared/chunk-OZE3FFNP.js";export default a();
