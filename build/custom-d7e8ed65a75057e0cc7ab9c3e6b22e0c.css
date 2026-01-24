@@ -1,0 +1,138 @@
+/* =========================================
+   Shapes of Uncertainty — UI system
+   Purpose: restrained, semantic styling
+   ========================================= */
+
+/* ---------- Palette (single source of truth) ---------- */
+:root {
+  --accent: #5808fb;          /* primary purple */
+  --accent-2: #9829ea;        /* secondary purple (used sparingly) */
+
+  --good: #2a7f62;            /* exercises / constructive action */
+  --warn: #b00020;            /* pitfalls / errors */
+
+  --ink: #111111;             /* body text (theme likely sets this) */
+  --muted: rgba(17, 17, 17, 0.72);
+
+  --accent-bg: rgba(88, 8, 251, 0.05);
+  --good-bg: rgba(42, 127, 98, 0.06);
+  --warn-bg: rgba(176, 0, 32, 0.05);
+}
+
+/* ---------- Typography / hierarchy ---------- */
+
+/* Chapter titles (override theme specificity) */
+main h1,
+article h1,
+.prose h1,
+.myst-content h1,
+.content h1 {
+  color: var(--accent) !important;
+  font-weight: 650 !important;
+  letter-spacing: -0.01em;
+}
+
+/* Optional: make H2 a bit more authoritative without coloring */
+main h2,
+article h2 {
+  font-weight: 650;
+}
+
+/* Optional: subtle divider under H1 (comment out if too much) */
+/*
+main h1::after,
+article h1::after {
+  content: "";
+  display: block;
+  margin-top: 0.35rem;
+  width: 3.5rem;
+  height: 3px;
+  background: var(--accent);
+  opacity: 0.35;
+  border-radius: 2px;
+}
+*/
+
+/* ---------- Inline semantics ---------- */
+
+/* Use with: <span class="highlight">word</span> */
+.highlight {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Use with: <span class="term">defined term</span> */
+.term {
+  color: var(--accent);
+  font-weight: 650;
+  border-bottom: 1px solid rgba(88, 8, 251, 0.35);
+}
+
+/* Use sparingly for small labels, not paragraphs */
+.section-title {
+  color: var(--accent-2);
+  font-weight: 650;
+}
+
+/* ---------- Admonitions (semantic boxes) ---------- */
+/* You’ll use these in Markdown like:
+   :::{admonition} Exercise
+   :class: exercise
+   ...
+   :::
+*/
+
+/* Shared box style */
+.admonition {
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+}
+
+/* Make the title look like a title */
+.admonition > .admonition-title {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* EXERCISE */
+.admonition.exercise {
+  border-left: 4px solid var(--good);
+  background-color: var(--good-bg);
+}
+
+.admonition.exercise > .admonition-title {
+  color: var(--good);
+}
+
+/* KEY IDEA (use for “pause and lock it in”) */
+.admonition.key-idea {
+  border-left: 4px solid var(--accent);
+  background-color: var(--accent-bg);
+}
+
+.admonition.key-idea > .admonition-title {
+  color: var(--accent);
+}
+
+/* PITFALL (common error / cognitive trap) */
+.admonition.pitfall {
+  border-left: 4px solid var(--warn);
+  background-color: var(--warn-bg);
+}
+
+.admonition.pitfall > .admonition-title {
+  color: var(--warn);
+}
+
+/* Optional: slightly tighten paragraph spacing inside admonitions */
+.admonition p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Optional: make lists inside admonitions a bit tighter */
+.admonition ul,
+.admonition ol {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}

@@ -1,0 +1,107 @@
+/* =========================
+   HEADINGS — FORCE OVERRIDE
+   ========================= */
+
+/* H1 */
+.myst-content :where(h1),
+.content :where(h1),
+article :where(h1),
+main :where(h1) {
+  color: #1f3a5f !important;
+  font-weight: 600 !important;
+}
+
+/* H2 */
+.myst-content :where(h2),
+.content :where(h2),
+article :where(h2),
+main :where(h2) {
+  color: #334e68 !important;
+  font-weight: 600 !important;
+}
+
+/* H3 */
+.myst-content :where(h3),
+.content :where(h3),
+article :where(h3),
+main :where(h3) {
+  color: #475e75 !important;
+  font-weight: 500 !important;
+}
+
+
+/* =========================
+   INLINE EMPHASIS
+   ========================= */
+
+.highlight {
+  color: #3b82c4;
+  font-weight: 500;
+}
+
+/* =========================
+   ADMONITIONS — SEMANTIC
+   (book-theme compatible)
+   ========================= */
+
+/* Base admonition (covers both renderers) */
+.myst-content .admonition,
+.myst-content .callout {
+  border-radius: 6px;
+  padding: 0.9em 1em;
+  margin: 1.2em 0;
+}
+
+/* Title (covers both title element names) */
+.myst-content .admonition-title,
+.myst-content .callout-title {
+  font-weight: 600;
+}
+
+/* Key Idea */
+.myst-content .admonition.key-idea,
+.myst-content .callout.key-idea {
+  border-left: 4px solid #1f3a5f;
+  background-color: rgba(31, 58, 95, 0.05);
+}
+
+.myst-content .admonition.key-idea .admonition-title,
+.myst-content .callout.key-idea .callout-title {
+  color: #1f3a5f !important;
+}
+
+/* Exercise */
+.myst-content .admonition.exercise,
+.myst-content .callout.exercise {
+  border-left: 4px solid #2f855a;
+  background-color: rgba(47, 133, 90, 0.06);
+}
+
+.myst-content .admonition.exercise .admonition-title,
+.myst-content .callout.exercise .callout-title {
+  color: #2f855a !important;
+}
+
+/* Pitfall */
+.myst-content .admonition.pitfall,
+.myst-content .callout.pitfall {
+  border-left: 4px solid #8b1e3f;
+  background-color: rgba(139, 30, 63, 0.06);
+}
+
+.myst-content .admonition.pitfall .admonition-title,
+.myst-content .callout.pitfall .callout-title {
+  color: #8b1e3f !important;
+}
+
+/* Summary */
+.myst-content .admonition.summary,
+.myst-content .callout.summary {
+  border-left: 4px solid #334e68;
+  background-color: rgba(51, 78, 104, 0.05);
+}
+
+.myst-content .admonition.summary .admonition-title,
+.myst-content .callout.summary .callout-title {
+  color: #334e68 !important;
+}

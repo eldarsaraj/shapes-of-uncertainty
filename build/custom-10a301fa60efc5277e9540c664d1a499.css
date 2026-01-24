@@ -1,0 +1,70 @@
+/* =========================
+   HEADINGS — FORCE OVERRIDE
+   ========================= */
+
+/* H1 */
+.myst-content :where(h1),
+.content :where(h1),
+article :where(h1),
+main :where(h1) {
+  color: #1f3a5f !important;
+  font-weight: 600 !important;
+}
+
+/* H2 */
+.myst-content :where(h2),
+.content :where(h2),
+article :where(h2),
+main :where(h2) {
+  color: #334e68 !important;
+  font-weight: 600 !important;
+}
+
+/* H3 */
+.myst-content :where(h3),
+.content :where(h3),
+article :where(h3),
+main :where(h3) {
+  color: #475e75 !important;
+  font-weight: 500 !important;
+}
+
+
+/* =========================
+   INLINE EMPHASIS
+   ========================= */
+
+.highlight {
+  color: #3b82c4;
+  font-weight: 500;
+}
+
+/* =========================
+   ADMONITIONS — FORCE OVERRIDES (Tailwind utilities)
+   ========================= */
+
+/* EXERCISE */
+aside.myst-admonition.exercise.border-blue-500 { border-left-color: #2f855a !important; }
+aside.myst-admonition.exercise .text-blue-600 { color: #2f855a !important; }
+aside.myst-admonition.exercise .bg-blue-50 { background-color: rgba(47, 133, 90, 0.12) !important; }
+
+/* KEY IDEA */
+aside.myst-admonition.key-idea.border-blue-500 { border-left-color: #1f3a5f !important; }
+aside.myst-admonition.key-idea .text-blue-600 { color: #1f3a5f !important; }
+aside.myst-admonition.key-idea .bg-blue-50 { background-color: rgba(31, 58, 95, 0.12) !important; }
+
+/* DEFINITION */
+aside.myst-admonition.definition.border-blue-500 {border-left-color: #6b4eff !important;}
+aside.myst-admonition.definition .text-blue-600 {color: #6b4eff !important;}
+aside.myst-admonition.definition .bg-blue-50 {background-color: rgba(107, 78, 255, 0.12) !important;}
+
+/* PITFALL */
+aside.myst-admonition.pitfall.border-blue-500 { border-left-color: #8b1e3f !important; }
+aside.myst-admonition.pitfall .text-blue-600 { color: #8b1e3f !important; }
+aside.myst-admonition.pitfall .bg-blue-50 { background-color: rgba(139, 30, 63, 0.12) !important; }
+
+/* SUMMARY */
+aside.myst-admonition.summary.border-blue-500 { border-left-color: #334e68 !important; }
+aside.myst-admonition.summary .text-blue-600 { color: #334e68 !important; }
+aside.myst-admonition.summary .bg-blue-50 { background-color: rgba(51, 78, 104, 0.12) !important; }
+

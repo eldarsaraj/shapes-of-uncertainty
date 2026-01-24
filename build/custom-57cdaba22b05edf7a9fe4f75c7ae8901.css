@@ -1,0 +1,91 @@
+/* =========================
+   GLOBAL TYPOGRAPHY SIGNALS
+   ========================= */
+
+main h1,
+article h1,
+.prose h1,
+.myst-content h1,
+.content h1 {
+  color: #1f3a5f !important;
+  font-weight: 600 !important;
+}
+
+main h2,
+article h2 {
+  color: #334e68;
+  font-weight: 600;
+}
+
+main h3,
+article h3 {
+  color: #475e75;
+  font-weight: 500;
+}
+
+/* =========================
+   INLINE EMPHASIS
+   ========================= */
+
+.highlight {
+  color: #3b82c4;
+  font-weight: 500;
+}
+
+/* =========================
+   ADMONITIONS — SEMANTIC
+   ========================= */
+
+/* Base admonition */
+.admonition {
+  border-radius: 6px;
+  padding: 0.9em 1em;
+  margin: 1.2em 0;
+}
+
+/* Key Idea */
+.admonition.key-idea {
+  border-left: 4px solid #1f3a5f;
+  background-color: rgba(31, 58, 95, 0.05);
+}
+
+.admonition.key-idea > .admonition-title {
+  color: #1f3a5f;
+  font-weight: 600;
+}
+
+/* Exercise */
+.admonition.exercise {
+  border-left: 4px solid #2f855a;
+  background-color: rgba(47, 133, 90, 0.06);
+}
+
+.admonition.exercise > .admonition-title {
+  color: #2f855a;
+  font-weight: 600;
+}
+
+/* Pitfall */
+.admonition.pitfall {
+  border-left: 4px solid #8b1e3f;
+  background-color: rgba(139, 30, 63, 0.06);
+}
+
+.admonition.pitfall > .admonition-title {
+  color: #8b1e3f;
+  font-weight: 600;
+}
+
+/* =========================
+   OPTIONAL: SUMMARY BOX
+   ========================= */
+
+.admonition.summary {
+  border-left: 4px solid #334e68;
+  background-color: rgba(51, 78, 104, 0.05);
+}
+
+.admonition.summary > .admonition-title {
+  color: #334e68;
+  font-weight: 600;
+}

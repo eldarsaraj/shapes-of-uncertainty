@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="http://localhost:3000/sitemap_style.xsl" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://localhost:3000</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/introduction</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/distributions</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/uniform</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/bernoulli</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/normal</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/binomial</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/exponential</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/geometric</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/poisson</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/lognormal</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/pareto</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/weibull</loc>
+  </url>
+  <url>
+    <loc>http://localhost:3000/conclusion</loc>
+  </url>
+</urlset>

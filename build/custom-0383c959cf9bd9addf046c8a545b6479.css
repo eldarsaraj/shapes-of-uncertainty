@@ -1,0 +1,111 @@
+/* =========================
+   HEADINGS — FORCE OVERRIDE
+   ========================= */
+
+/* H1 */
+.myst-content :where(h1),
+.content :where(h1),
+article :where(h1),
+main :where(h1) {
+  color: #1f3a5f !important;
+  font-weight: 600 !important;
+}
+
+/* H2 */
+.myst-content :where(h2),
+.content :where(h2),
+article :where(h2),
+main :where(h2) {
+  color: #334e68 !important;
+  font-weight: 600 !important;
+}
+
+/* H3 */
+.myst-content :where(h3),
+.content :where(h3),
+article :where(h3),
+main :where(h3) {
+  color: #475e75 !important;
+  font-weight: 500 !important;
+}
+
+
+/* =========================
+   INLINE EMPHASIS
+   ========================= */
+
+.highlight {
+  color: #3b82c4;
+  font-weight: 500;
+}
+
+/* =========================
+   ADMONITIONS — SEMANTIC (myst book-theme DOM)
+   Targets: <aside class="myst-admonition ... border-blue-500 ... exercise">
+   ========================= */
+
+/* Base box look */
+.myst-content aside.myst-admonition {
+  border-radius: 8px !important;
+  overflow: hidden !important;
+}
+
+/* ---------- EXERCISE (green) ---------- */
+.myst-content aside.myst-admonition.exercise {
+  border-left-color: #2f855a !important;
+}
+
+.myst-content aside.myst-admonition.exercise .myst-admonition-header {
+  background: rgba(47, 133, 90, 0.10) !important;
+  color: #2f855a !important;
+}
+
+.myst-content aside.myst-admonition.exercise .myst-admonition-header-text {
+  color: #1f2937 !important; /* keep text readable */
+}
+
+.myst-content aside.myst-admonition.exercise .myst-admonition-header-icon {
+  color: #2f855a !important;
+}
+
+/* ---------- KEY IDEA (navy) ---------- */
+.myst-content aside.myst-admonition.key-idea {
+  border-left-color: #1f3a5f !important;
+}
+
+.myst-content aside.myst-admonition.key-idea .myst-admonition-header {
+  background: rgba(31, 58, 95, 0.10) !important;
+  color: #1f3a5f !important;
+}
+
+.myst-content aside.myst-admonition.key-idea .myst-admonition-header-icon {
+  color: #1f3a5f !important;
+}
+
+/* ---------- PITFALL (crimson) ---------- */
+.myst-content aside.myst-admonition.pitfall {
+  border-left-color: #8b1e3f !important;
+}
+
+.myst-content aside.myst-admonition.pitfall .myst-admonition-header {
+  background: rgba(139, 30, 63, 0.10) !important;
+  color: #8b1e3f !important;
+}
+
+.myst-content aside.myst-admonition.pitfall .myst-admonition-header-icon {
+  color: #8b1e3f !important;
+}
+
+/* ---------- SUMMARY (slate) ---------- */
+.myst-content aside.myst-admonition.summary {
+  border-left-color: #334e68 !important;
+}
+
+.myst-content aside.myst-admonition.summary .myst-admonition-header {
+  background: rgba(51, 78, 104, 0.10) !important;
+  color: #334e68 !important;
+}
+
+.myst-content aside.myst-admonition.summary .myst-admonition-header-icon {
+  color: #334e68 !important;
+}

@@ -1,0 +1,25 @@
+```{figure} assets/cover-title.png
+:name: cover-title
+---
+width: 10%
+---
+```
+
+Uncertainty is not a temporary problem caused by missing information. It is a structural feature of reality. Outcomes vary even under similar conditions, and noise interferes with our attempts to infer what is true from what we observe.
+
+Science learned how to reason under these conditions by classifying uncertainty instead of denying it.
+
+This book brings that lesson into everyday life.
+
+Each chapter explores a distinct shape of uncertainty: how it behaves, where it appears, and what kinds of reasoning and action it permits. The focus is on practical judgment: knowing what kind of situation you are in, what conclusions are warranted, and where restraint is required.
+
+The term professionals-scientists, statisticians, researchers, and philosophers-use for these 'shapes' is _probability distributions_. This piece of jargon hides an amazingly complex, yet extremely useful lesson about the reality we share: there is not a single uncertainty out there, but many of them (thus it would be more appropriate to call them 'uncertainties', using a plural rather than a singular).
+
+If you have ever taken a statistics course, or you are a professional using data to discover something about the world, you are very likely familiar with the term. But, even if you've never heard of it, you are equally affected by it in your everyday life.
+
+```{figure} assets/cover-no-abe.png
+:name: cover-no-sbr
+---
+width: 10%
+---
+```
