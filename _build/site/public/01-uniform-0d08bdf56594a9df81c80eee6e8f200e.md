@@ -1,0 +1,268 @@
+# When Nothing Favors Anything
+
+:::{admonition} What you’ll learn
+:class: key-idea
+
+- Why some uncertain situations are indifferent rather than complex
+- How to recognize randomness with no internal structure to exploit
+- Why repetition does not always produce learning or advantage
+- When persistence, strategy, and interpretation stop making sense
+- How to avoid reading meaning, fairness, or progress into indifferent outcomes
+
+:::
+
+If you could imagine a perfectly random situation, what comes to your mind?
+
+If you're like me, you probably think about some game experiments or tricks, like tossing a coin or throwing a gambling die.
+
+These are standard, textbook examples of a particular kind of randomness in which the outcome of some action is completely unpredictable.
+
+But, what does it mean exactly to say that the outcome is unpredictable? While the answer seems simple (the face the coin lands on, or the top number shown on the die once it stops turning), it takes a bit more thought to describe this randomness in more detail.
+
+Namely, in both of these cases we have a set of _possible outcomes_. In the case of the coin, only two (heads and tails), and in the case of the die, six (1, 2, 3, 4, 5, 6). These possible outcomes form a set and we'll call such a set <span class="highlight">the range</span>.
+
+In probability theory and statistics, the outcome of some random situation is called _a random variable_ and this set is called the range of the random variable. Every uncertain situation in life will have a range; you can think of it a set of all possibilities that can occur after some action takes place. Philosophers love describing these as _possible worlds_ and if you're a fan of science fiction, you'll immediately think of the multiverse.
+
+If you do, you'll not be far off the mark.
+
+## A world that doesn’t care
+
+What makes situations like the coin toss and die throw unique is that their unpredictability is not particularly complex. Even a five year old playing a board game can understand how it works. The unpredictability here, however, stems from the fact that the result that occurs is _completely indifferent_ towards all outcomes in the range; not of them are preferred. When you toss a die, you're equally likely to get a 1 and a 6 (and any other number in the range). No result is nudged forward, and if the die is fair (not interfered with intentionally), there are no mysterious forces behind it.
+
+This particular kind of randomness is called <span class="highlight">uniform</span> randomness, and a set of possible outcomes together with their propensity to occur following a particular pattern is called a <span class="highlight">uniform distribution</span>.
+
+:::{admonition} Key idea
+:class: key-idea
+
+Some uncertainty exists because nothing is pushing outcomes anywhere. We call such uncertainty uniform.
+
+:::
+
+## The shape of the uniform distribution
+
+The defining feature of this type of uncertainty is that every possibility (every outcome in its range) stands on equal footing.
+
+If you imagine this as the space of possible outcomes, it is flat. It has no hills, or valleys. Just an even spread, where every result is as plausible as the next, and none contains information about what should follow.
+
+This does not mean outcomes cannot surprise us. They often do. But the surprise carries no lesson. Nothing about an unexpected result makes the next one more predictable, or more favorable, or more revealing.
+
+This is randomness without internal structure to exploit.
+
+And that absence of structure is exactly what distinguishes uniform uncertainty from every other shape you will encounter in this book. Later chapters will introduce situations where outcomes cluster, where history matters, where rare events dominate, or where small differences grow into large ones.
+
+Here, none of that happens.
+
+This is the baseline distribution. The simplest case. The point of zero curvature.
+
+Understanding this shape matters not because it is common (it isn’t) but because it will provide us a useful contrast to any other uncertain situation we'll encounter later in the book. Once you grasp what true indifference looks like, any other structure becomes visible everywhere else.
+
+So, before we can talk about learning, persistence, risk, or strategy, we have to recognize the rare situations where none of those ideas apply.
+
+Uniform uncertainty is one of them.
+
+And it is fitting that we talk about this type of uncertainty first, because it is as random as it can possibly get. It offers us nothing to hold on to, there are no creases on its surface we could grab, there are no details on its body to give any sense of distinction. It is pure and unadulterated randomness; chaos in the full sense of the word.
+
+We'll use visuals to describe these shapes in more detail, and below you will find the first one of these. What you see here is a chart showing the frequency of a die toss after 100,000 throws.
+
+When we say that a probability distribution is flat, we mean (visually) something like this: all bars are of (roughly) equal hight, there's nothing to indicate some numbers are more favored than others.
+
+:::{figure} images/die-outcome.png
+:name: fig-uniform-die
+:width: "70%"
+:alt: Frequency of outcomes from 100,000 tosses of a fair die
+
+Observed frequencies from 1000 tosses of a fair die.  
+No outcome is favored; deviations reflect random variation, not structure.
+:::
+
+## The properties of uniform distribution
+
+Let's formalize the description of this type of uncertainty by looking at it's fundamental features. We'll answer those questions we mentioned in the last chapter.
+
+#### Favoritism
+
+As I said already, the uniform distribution is 'flat': it does not have a favored outcome, all of them are equally likely. Flip a coin, toss a die, or enter a lottery and you can expect that any outcome in the range will occur. None of them have a special place.
+
+#### Typicality
+
+Is there a typical outcome or set of outcomes that occur under a uniform distribution? No, this question does not even make much sense under these circumstances. Since all outcomes are equally likely, none of them is somehow typical.
+
+In statistics, typicallity is usually expressed through the concept of the average (the arithmetic mean, to be more precise). Computing it is very simple: we get it by adding all the values in the range and dividing it by the number of the values. It is considered to be a measure of 'central tendency' of a distribution: it tells us what is the typical value the outcomes in the distribution have a tendency to 'circle around.'
+
+This allows statisticians to compute the average of any distribution, including the uniform one. So, if we take, for example, the fair die as an example and compute it's average, we'll get 3.5. So, in the formal sense, this would be the 'typical' outcome of a die toss.
+
+But, does this make any sense? Do we ever get 3.5 when we roll a fair die? No, of course. So, this is not very useful in the immediate, practical sense. But, you can imagine a situation in which you'd want to know what could you expect in a uniformly distributed random process that repeats many times. For example, imagine you want to play a gambling game in which you have to pay an entrance fee of $3 for each toss of the die, and you win as many dollars as the number on the die shows (so, if it shows 1 you get $1; if it shows 6, you get $6). The game can be played indefinitely.
+
+Should you play this game?
+
+This is where the 'typicality' of the uniform distribution can help. While it is uncertain how much money you could make on each individual toss (if you get a 1, you'll be at a loss for $2; if you get a 6, you'll pocket $3), the average across many games suggest that it would be profitable for you to partake in the game: for each $300 you pay in entrance fees, you're expected to make /$350, so you'd be profiting $50. This is about 16% profit, which is, if you think about it not bad at all.
+
+Now, this _is_ informative. It tells us something important about the nature of this random process.
+
+#### Extremeness
+
+Does the uniform distribution contain any extreme outcomes? Well, it depends on how we define extreme. In probability distributions, extremes are considered to be _extremely rare_ outcomes, not extremely small or extremely large values.
+
+For example, if you to a beach in Long Island, you're not very likely to be eaten by a shark. You can spend your entire lifetime on the beach and never encounter a deadly great white shark. But, it is still possible to be so unlucky and get eaten by one. In this example (which is _not_ an example of a uniform distribution, as you will see later) encountering a deadly shark is the extreme outcome because it's so rare.
+
+Perhaps, we could translate this to a more familiar situation: imagine a large bowl with 100,000 marbles, 999,999 of which are blue, and 1 is red. If you randomly pulled one marble out, picking the white one would be an extreme event.
+
+Uniform distribution does not contain these kinds of extremes. You might have extremely low and extremely large values, but if all have the same probability of occurring, then they are not extremes. Here, any outcome is as extreme as any other, and there is no meaningful distinction between extreme typical values. So, the idea of an extreme is not very informative.
+
+#### Memory
+
+As I'm sure you noticed already, this is a very boring type of randomness, which is also evident in the fact that it is 'memoryless': every new outcome resets everything, the system doesn't 'remember' previous outcomes. Every time you toss a die, the probabilty of getting some number is the same; the process doesn't care about which number you got last time.
+
+#### Accumulation
+
+Similary, there is no accummulation of outcomes. If you flip a coin 10 times and you got heads each of the 10 times, you're not 'due' to get either tails or heads on the next flip. Those 10 heads don't accummulate and have no impact on the future flips.
+
+#### Predictive Horizon
+
+Can you successfully predict what will happen in the future? Does this distribution tell us what kinds of values we might expect?
+
+Short term, the answer is no. You can't know anything about the next outcome. Actually, you can't know anything about any individual outcome, no matter how long in the future it is. Your predictive abilities are equally opaque for the outcome 2 as well as for the outcome 2,000. However, as I indicated earlier, you _can_ know something about the aggregate (group) outcomes: you can predict the average of set of repeated outcomes.
+
+#### Action Implications
+
+Now that you know a bit about this shape of uncertainty, you can understand what kinds of actions are most appropriate in circumstances determined by uniform randomness. You are pretty powerless as an individual, and you're at the mercy of the most whimsical of masters: absolute randomness with no character.
+
+The best strategy in situations like these will depend on what is at stake for you. If you're playing a game with some meaningful reward, but no entrance fee and no sacrifice on your part, then participating cannot harm you; you should do it by all means.
+
+However, if the process does require some sacrifice, then your best strategy will depend on the relation between that sacrifice and the probabilities of the reward. The most common situation like this millions of people worldwide find themselves is the lottery. For a meager amount (equivalent to a couple of US dollars in most countries) people have the opportunity to buy lottery tickets that can bring them thousands, even millions of dollars as a reward. Is playing such a lottery a good idea? Is it worth spending a few dollars every month on it?
+
+Well, that depends on how much money you have for disposal on these kinds of activities. If you do have enough to meet all your most important needs, then sure, why not. In such a context, this can even be considered a fun game, or a license to fantasize what would you do if you got a 100 million dollars. But, in my experience of playing lottery and speaking to people who do, most people don't take this so lightly. Some of them spend significant amounts of their salary on lottery tickets, month after month, each time expecting to win precisely because they have played it for a long time and think that a mere repetition will somehow guarantee a win. But, the probability of hitting a jackpot for any kind of (large, state-sponsored) lottery is actually minuscule: most often, the odds are in the vicinity of one in a million or so.
+
+Because the lottery is an example of a uniform randomness, each individual ticket has the same probability of outcome, the process is memoryless and doesn't accumulate, all of which make repetitive playing a recipe for almost a certain loss. No wonder the saying that lottery is "a taxation on idiocy."
+
+## Why our minds struggle with indifference
+
+This kind of uncertainty feels oddly clean. There is no sense that effort will help, or that learning more will reveal a pattern. You can wait, retry, hope, or worry, (or try some of the gambling superstitions like blowing the dice) but none of that changes how the situation behaves.
+
+This is, perhaps, what makes these situations psychologically uncomfortable for most of us. We are deeply inclined to believe that the world leans somewhere; that outcomes cluster, that persistence pays off, that unfairness hides a reason. But here, the world refuses to cooperate with that instinct. It offers no signal to latch onto.
+
+The reason could be the fact that humans have evolved to recognize structure.
+
+We are extremely good at noticing patterns, trends, gradients, and deviations. This ability is adaptive in most environments. It helps us learn, improve, and coordinate action. When the world responds to effort or feedback, pattern recognition is a strength.
+
+But, uniform uncertainty offers none of that.
+
+Our minds find it very hard to deal with this. When outcomes are scattered evenly, no matter what we do, our mind refuses to interpret this as absence of any structure, but as evidence of some hidden forces beneath. We assume we are missing something. We search harder, watch more closely, and if none of that gives us answers we seek (as it can't), we reach for conspiratorial explanations.
+
+This is the root of one of the most common errors people make, especially in gambling contexts. Go to Las Vegas, observe the casino tables and you'll see plenty of examples like this one: roulette wheel lands on black five times in a row. Players will start crowding red, convinced that balance must assert itself. Others will double down on black, believing the streak has momentum. Neither of these interpretations are true.
+
+You can probably feel this pull yourself. Flip a coin 10 times. If you get 9 heads and 1 tail, you'll start being suspicious that something is wrong with the coin.
+
+Similarly, you might feel uneasy about number 13. And you'd not be the only one. If you pay attention, you'll notice that most buildings in the US don't have the 13th floor.
+
+Mystical interpretations of uniformly random events do not stop at gambling tables or beliefs about certain numbers. When people experience repeated failure or loss in domains governed by chance (such as death, illness, infertility, etc), they often search for hidden reasons: fate, punishment, destiny, imbalance, moral cause. The mind struggles to accept that something deeply meaningful can be governed by indifference.
+
+But it can, and there's nothing we can do about it.
+
+:::{admonition} Pitfall: Beware of conspiratorial thinking
+:class: pitfall
+
+Some processes are indifferent to outcomes, and if several random occurences happen, it doesn't mean there are secret forces behind them. Uniform uncertainty often invites false meaning-making.
+
+:::
+
+## Where Uniform Uncertainty Appears in Real Life
+
+Purpose: Prevent the reader from dismissing it as “toy randomness.”
+
+Examples such as:
+
+Fair games of chance
+
+Truly random assignment systems
+
+Some bureaucratic or lottery-like processes
+
+Certain online exposures (early-stage content, random pairing)
+
+Clarify boundaries:
+Many situations feel uniform but are not — this chapter helps you spot the difference.
+
+Takeaway: uniform uncertainty is rare, but when it exists, it must be recognized.
+
+## When Persistence Is Pointless
+
+Purpose: Translate structure into behavior.
+
+Explain why retrying does not improve odds
+
+Why effort, learning, or timing don’t help
+
+Why hope becomes irrational expectation here
+
+Contrast with situations where persistence does matter (without naming them yet)
+
+Takeaway: knowing when persistence is wasted is a form of intelligence.
+
+## The Moral Trap: Fairness, Blame, and Desert
+
+Purpose: Connect structure to moral misinterpretation.
+
+We demand reasons where none exist
+
+We assign blame or credit illegitimately
+
+We interpret outcomes as deserved
+
+Uniform randomness breaks our fairness intuitions
+
+Takeaway: not all outcomes are explanations of merit or failure.
+
+## The Technical Name (Brief, Late, Contained)
+
+Purpose: Introduce terminology without centering it.
+
+Name: uniform distribution
+
+One-paragraph explanation
+
+Emphasize: the name is less important than the behavior
+
+Signal: this is the simplest shape you’ll encounter
+
+Takeaway: terminology labels a pattern you already understand.
+
+## How to Recognize You’re in a Uniform Situation
+
+Purpose: Give readers a diagnostic checklist.
+
+Signs such as:
+
+No learning improves outcomes
+
+No feedback accumulates
+
+No strategy beats randomness
+
+Streaks feel meaningful but never pay off
+
+Takeaway: recognition prevents wasted effort and false hope.
+
+## Why This Chapter Comes First
+
+Purpose: Integrate into the book’s arc.
+
+Uniform uncertainty is the conceptual baseline
+
+Every later chapter introduces deviation from indifference
+
+Learning starts with the simplest case
+
+Takeaway: once you understand indifference, structure becomes visible everywhere.
+
+## Exercise: Detecting Indifference
+
+Purpose: Force classification, not recall.
+
+Ask readers to identify situations they treated as meaningful
+
+Test whether any property besides indifference was actually present
+
+Emphasize restraint as a valid action
+
+Takeaway: sometimes the smartest move is to stop trying.

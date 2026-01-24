@@ -1,0 +1,9 @@
+
+.highlight {
+color: #5808fb;
+}
+
+h2:has(+ .exercise),
+h2.exercise-title {
+color: #9829ea;
+}

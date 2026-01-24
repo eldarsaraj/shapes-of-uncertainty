@@ -1,0 +1,45 @@
+version: 1
+
+project:
+  title: The Shapes of Uncertainty
+  toc:
+    - file: content/index.md
+    - file: content/introduction.md
+    - file: content/distributions.md
+
+    - title: Part I - The Flatland of Chance
+      children:
+        - file: content/part-1/01-uniform.md
+        - file: content/part-1/10-bernoulli.md
+
+    - title: Part II — The Tyranny of the Average
+      children:
+        - file: content/part-2/02-normal.md
+        - file: content/part-2/05-binomial.md
+
+    - title: Part III — Waiting, Persistence, and False Narratives
+      children:
+        - file: content/part-3/03-exponential.md
+        - file: content/part-3/06-geometric.md
+
+    - title: Part IV — Clusters, Spikes, and Manufactured Panic
+      children:
+        - file: content/part-4/04-poisson.md
+
+    - title: Part V — Inequality Is the Default
+      children:
+        - file: content/part-5/07-lognormal.md
+        - file: content/part-5/08-pareto.md
+
+    - title: Part VI — Risk Over Time
+      children:
+        - file: content/part-6/09-weibull.md
+
+    - file: content/conclusion.md
+
+site:
+  template: book-theme
+  options:
+    logo: content/assets/logo.png
+    favicon: assets/favicon.png
+    style: assets/css/custom.css

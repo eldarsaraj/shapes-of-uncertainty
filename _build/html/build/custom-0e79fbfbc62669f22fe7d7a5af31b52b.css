@@ -1,0 +1,48 @@
+
+/* Chapter titles */
+/* Chapter titles (override theme) */
+main h1,
+article h1,
+.prose h1,
+.myst-content h1,
+.content h1 {
+color: #5808fb !important;
+font-weight: 600 !important;
+}
+
+.highlight {
+color: #5808fb;
+}
+
+.section-title {
+color: #9829ea;
+}
+
+.key-idea-title {
+color: #5808fb;
+font-weight: 600;
+}
+
+.exercise-title {
+color: #2a7f62;
+}
+
+.pitfall-title {
+color: #b00020;
+}
+
+/* Exercise admonition title */
+.admonition.exercise > .admonition-title {
+color: #5808fb;
+font-weight: 600;
+}
+
+/* Optional: subtle frame styling */
+.admonition.exercise {
+border-left: 4px solid #5808fb;
+}
+
+.admonition.exercise {
+background-color: rgba(88, 8, 251, 0.04);
+}
+
