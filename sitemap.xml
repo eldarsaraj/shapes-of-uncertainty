@@ -20,9 +20,6 @@
     <loc>http://localhost:3000/normal</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/binomial</loc>
-  </url>
-  <url>
     <loc>http://localhost:3000/exponential</loc>
   </url>
   <url>
