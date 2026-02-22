@@ -1,0 +1,227 @@
+# When Growth Hides Risk
+
+:::{admonition} What you’ll learn
+:class: key-idea
+
+- Why some uncertainties grow multiplicatively rather than additively
+- How compounding creates asymmetry and long right tails
+- Why the average can be deeply misleading in growth-driven systems
+- How “typical experience” differs from “expected value” in these environments
+- Where hidden fragility emerges when variation compounds over time
+
+:::
+
+We have already encountered worlds where variation cancels out, where noise stabilizes, and where the average meaningfully describes what you are likely to encounter.
+
+But not all processes behave that way.
+
+Some systems do not grow by adding small independent pieces. They grow by multiplying.
+
+For example:
+
+- Interest compounds
+- Businesses scale
+- Populations expand
+- Investments reinvest their returns
+- Skills build on previous skills
+
+In these environments, uncertainty does not accumulate symmetrically: it stretches.
+
+This is the world of the **lognormal distribution**.
+
+---
+
+## When growth multiplies
+
+Suppose you invest money in a fund that earns a return each year. One year it grows by 5%, another year it falls by 3%, another year it grows by 8%. Each year’s outcome multiplies what came before.
+
+If you begin with \$100 and earn 10%, you now have \$110. If you then lose 10%, you do not return to \$100. You fall to \$99. **Loss and gain do not cancel symmetrically when growth is multiplicative**.
+
+This is the key distinction.
+
+In additive systems, deviations push in opposite directions and tend to wash out. In multiplicative systems, deviations compound. Small differences, repeated over time, **produce widening gaps**.
+
+The lognormal distribution emerges when many small percentage changes multiply together.
+
+Instead of modeling the raw values directly, we model their logarithms. A logarithm is simply a way of transforming multiplicative change into additive change. When we take the logarithm of a number, we are no longer measuring the number itself, but the exponent to which a base (usually 10 or the constant $$e$$ must be raised to produce that number. This may sound abstract, but its practical meaning is straightforward: percentage changes become differences. If something grows by 10% and then by another 10%, those growth steps multiply in ordinary space. But in logarithmic space, they add. By taking logarithms, we convert compounding processes into additive ones. If those additive changes fluctuate symmetrically—pushed up and down by many small influences—their distribution tends to resemble the normal curve. When we transform back to the original scale, the symmetry disappears and the familiar right-skewed lognormal shape emerges.
+
+When the logarithms behave like a normal distribution—when their deviations are symmetric and cancel out—the original values become lognormally distributed.
+
+The result is a shape that looks very different from the familiar bell curve.
+
+::{figure} images/lognormal-chart.png
+:name: fig-poiss
+:width: "70%"
+:alt: Poisson
+
+The shape of the poisson distribution centered around the average.
+:::
+
+---
+
+## The shape of compounding uncertainty
+
+Visually, the lognormal distribution is skewed to the right.
+
+There is a concentration of outcomes near a lower region, but a long, stretching tail extends toward large values.
+
+Most observations are modest.  
+A few are enormous.
+
+Unlike the normal distribution, there is no symmetry around the average. The mean is pulled upward by rare but very large values.
+
+In such a distribution, the “typical” case and the “average” case are not the same.
+
+If income follows a lognormal pattern—as it often approximately does—most people earn less than the average income. The mean is lifted by a relatively small number of very high earners.
+
+The same pattern appears in firm sizes, city populations, investment returns, and biological growth processes.
+
+Growth hides risk because compounding creates dispersion.
+
+---
+
+## Why the average becomes misleading
+
+In additive environments, the average corresponds to something you are likely to encounter. In multiplicative environments, this intuition breaks down.
+
+The arithmetic mean in a lognormal system is heavily influenced by rare extreme values. These extremes may be infrequent, but their magnitude stretches the average upward.
+
+If you ask, “What is the average outcome?” you may receive a number that few individuals actually experience.
+
+A more informative measure in such systems is often the median—the middle case—rather than the mean. The median reflects the typical lived experience more faithfully.
+
+This difference between mean and median is not technical trivia. It shapes how we interpret inequality, risk, and opportunity.
+
+When growth compounds, dispersion expands.
+
+---
+
+## The properties of lognormal uncertainty
+
+Let us apply the property lens carefully.
+
+### Typicality
+
+Typicality exists, but it does not align with the arithmetic mean.
+
+Most outcomes cluster around a region below the mean. The distribution has a “body” where many observations reside, but it does not mirror itself on the upper side.
+
+Understanding this helps prevent confusion between “average” and “common.”
+
+### Extremeness
+
+Extremes are not thin in the way they are under normal uncertainty.
+
+They are rare, but when they occur, they are disproportionately large. Their magnitude, not just their frequency, shapes the system.
+
+A small number of large outcomes can dominate totals.
+
+### Memory
+
+The structure itself does not imply temporal memory in the sense of dependence between events. However, compounding creates path dependence. Early advantages or disadvantages can magnify over time.
+
+Two investors with identical average returns can diverge dramatically because of sequence effects.
+
+This is not memory in the strict probabilistic sense, but it is structural dependence created by multiplication.
+
+### Accumulation
+
+Accumulation is amplifying rather than stabilizing.
+
+Small percentage differences compound. Variation widens over time rather than shrinking.
+
+This is the opposite of regression toward the mean in additive systems.
+
+### Predictive Horizon
+
+Short-term variation may appear modest. Over long horizons, dispersion can become dramatic.
+
+Long-term prediction becomes more fragile because small deviations accumulate exponentially.
+
+---
+
+## Where growth hides risk in real life
+
+Lognormal patterns appear in many domains shaped by compounding.
+
+- Investment returns over long periods
+- Business growth and firm size distributions
+- Income distributions in many economies
+- The spread of online content popularity
+- Biological growth processes
+- The distribution of scientific citations
+
+In each case, small proportional differences multiply.
+
+Two creators begin with similar audiences. One experiences slightly higher engagement. Over time, that difference compounds. The gap widens.
+
+Two companies start with similar revenue. One grows slightly faster. Over years, the divergence becomes dramatic.
+
+The system does not require dramatic shocks. Compounding alone produces inequality.
+
+This is why growth environments often feel unfair even when each step appears modest.
+
+---
+
+## When growth becomes dangerous
+
+The danger lies in mistaking multiplicative environments for additive ones.
+
+If you assume deviations cancel out, you may underestimate long-term dispersion.
+
+If you plan using arithmetic averages in a compounding system, you may misjudge sustainability.
+
+For example, an average annual return of 7% does not guarantee stable wealth growth if variability is high. Volatility reduces geometric growth. Large losses require disproportionately large gains to recover.
+
+This is sometimes called volatility drag.
+
+Growth can magnify opportunity, but it also magnifies fragility.
+
+Understanding the lognormal structure means recognizing that success and failure can diverge dramatically even when short-term differences appear small.
+
+---
+
+## How to act in growth-driven uncertainty
+
+In multiplicative systems, managing variability becomes as important as pursuing gains.
+
+Reducing large negative shocks may matter more than maximizing average returns.
+
+Diversification, risk control, and attention to compounding dynamics become essential.
+
+You also learn to interpret averages carefully. Ask whether the mean reflects lived experience or whether a long tail is distorting perception.
+
+When evaluating opportunity, consider whether growth is additive or multiplicative. The difference determines whether dispersion will shrink or expand over time.
+
+The lesson is not to fear growth. It is to understand its structure.
+
+Growth amplifies both success and error. It rewards early advantage and punishes sustained instability.
+
+Recognizing this helps you see where apparent prosperity hides accumulated fragility.
+
+---
+
+:::{admonition} Pitfall: Confusing mean with typical
+:class: pitfall
+
+In multiplicative systems, the arithmetic mean can be significantly higher than what most individuals experience.
+
+Do not assume that the “average outcome” represents the common case.
+
+Check whether compounding and skewness are shaping the distribution.
+:::
+
+---
+
+:::{admonition} Exercise: Detecting Compounding Risk
+:class: exercise
+
+Choose one domain from your own experience that involves growth or accumulation over time (for example, savings, academic performance, skill development, social media following, or business revenue).
+
+1. Is growth additive (fixed increments) or multiplicative (percentage changes)?
+2. Would small early differences widen over time?
+3. Does the average outcome likely represent the typical case?
+4. Where might hidden fragility emerge if negative shocks occur?
+
+Explain your reasoning carefully. Focus on structure rather than opinion.
+:::

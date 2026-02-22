@@ -1,0 +1,189 @@
+# When Time Changes the Odds
+
+:::{admonition} What you’ll learn
+:class: key-idea
+
+- Why some waiting processes become more (or less) likely as time passes
+- How aging changes risk in ways that exponential models cannot capture
+- What it means for a system to “wear out” or “settle in”
+- How increasing and decreasing hazard rates reshape our expectations
+- When elapsed time genuinely carries information
+
+:::
+
+In earlier chapters, we encountered waiting processes that did not remember. If an event had not yet occurred, the probability of it occurring in the next moment remained unchanged. Waiting did not bring you closer.
+
+But not all systems behave with such indifference.
+
+Some systems age.
+
+A machine that has been running for twenty years does not carry the same risk as one that was installed yesterday. A new product may fail early due to hidden defects. A component that survives its early period may become more reliable over time. Human bodies change. Infrastructure deteriorates. Materials fatigue.
+
+In these environments, the passage of time is not neutral. It alters the odds.
+
+This is the world described by the **Weibull distribution**.
+
+---
+
+## Beyond memorylessness
+
+The exponential distribution assumes that risk per unit time remains constant. The probability of failure in the next minute does not depend on how long the system has already survived.
+
+The Weibull distribution relaxes this assumption.
+
+It allows the risk—the probability of failure in the next small interval—to increase or decrease over time.
+
+In simple terms, the Weibull model asks:
+
+Does waiting change the odds?
+
+If risk increases with age, we are observing wear-out.  
+If risk decreases with age, we are observing early fragility followed by stabilization.  
+If risk remains constant, the Weibull reduces to the exponential case.
+
+The Weibull distribution is therefore a flexible generalization of the exponential model.
+
+---
+
+## The shape of aging risk
+
+The defining feature of the Weibull distribution is its **shape parameter**, often denoted by \( k \).
+
+Without focusing on formulas, we can describe its role intuitively.
+
+- If \( k = 1 \), the model behaves like the exponential distribution. Risk is constant over time.
+- If \( k > 1 \), risk increases with time. The longer the system survives, the more likely failure becomes in the next moment.
+- If \( k < 1 \), risk decreases with time. Early failure is more likely; survivors become more robust.
+
+Visually, the density can take different forms. When \( k > 1 \), the distribution often rises to a peak and then declines, reflecting an increasing chance of failure before eventual thinning. When \( k < 1 \), the distribution is steep at the beginning, capturing early failures.
+
+Unlike the exponential distribution, which has a fixed shape, the Weibull adapts to the structure of the process.
+
+The key insight is not the curve itself, but what it encodes: time carries information.
+
+---
+
+## The properties of time-dependent uncertainty
+
+Let us apply the property lens carefully.
+
+### Typicality
+
+There may be a meaningful average lifetime or waiting time, but typical experience depends heavily on the shape parameter.
+
+If early failures dominate, the typical case is short-lived.  
+If wear-out dominates, the typical case may survive for a while before risk accelerates.
+
+The center of the distribution does not simply reflect accumulated noise; it reflects structural aging.
+
+### Extremeness
+
+Long survival times are possible, but their probability depends on how risk evolves. In increasing-risk systems, extremely long lifetimes become rare more quickly. In decreasing-risk systems, survivors can persist for long periods.
+
+Extremes are shaped by aging dynamics rather than pure randomness.
+
+### Memory
+
+Here, memory exists in the structure of the hazard rate.
+
+The process may still involve independent micro-events, but the system’s age affects its vulnerability. The passage of time changes the probability of future outcomes.
+
+This is fundamentally different from memoryless waiting.
+
+### Accumulation
+
+Accumulation may amplify fragility or strengthen resilience.
+
+Repeated stress can weaken a component, increasing failure probability. Conversely, early elimination of weak units may leave behind a more robust population.
+
+Time is not neutral; it modifies the landscape.
+
+### Predictive Horizon
+
+Short-term prediction becomes conditional on age. To estimate risk accurately, you must know how long the system has already survived.
+
+Elapsed time is informative.
+
+This is the defining distinction between Weibull and exponential uncertainty.
+
+---
+
+## Where time changes the odds in real life
+
+Weibull patterns appear in many domains involving aging, fatigue, and reliability:
+
+- Mechanical component lifetimes
+- Light bulbs and electronic devices
+- Infrastructure degradation
+- Medical survival analysis
+- Product reliability testing
+- Human aging processes
+
+In engineering, it is common to observe what is called a “bathtub curve”: high early failure due to manufacturing defects, followed by a stable period, and eventually increasing failure due to wear-out.
+
+The Weibull model can approximate different segments of such behavior.
+
+In medicine, survival probabilities often depend on how long a patient has already remained in remission. The longer survival continues, the risk profile may change.
+
+In such environments, elapsed time must be part of the reasoning.
+
+---
+
+## When ignoring aging becomes costly
+
+If you apply memoryless reasoning to an aging system, you will misjudge risk.
+
+Assuming that an old bridge has the same failure probability as a new one can lead to catastrophic oversight. Assuming that a device that has lasted decades is “due” to fail only makes sense if aging actually increases hazard.
+
+The reverse mistake is also possible. Some systems become more reliable after surviving early defects. Assuming rising risk where it does not exist may cause unnecessary replacement.
+
+Understanding whether hazard is increasing, decreasing, or constant is essential.
+
+The Weibull distribution gives us a framework for expressing that structure explicitly.
+
+---
+
+## How to act under time-dependent risk
+
+In environments where time changes the odds, monitoring age is rational.
+
+Maintenance schedules should reflect how risk evolves. Replacement policies should depend on whether failure probability accelerates with age. Medical monitoring should account for how survival time modifies prognosis.
+
+You do not simply wait and assume neutrality. Nor do you assume that survival guarantees safety.
+
+Instead, you examine the shape of hazard.
+
+The discipline here lies in distinguishing three worlds:
+
+- One in which waiting changes nothing (exponential).
+- One in which waiting increases vulnerability.
+- One in which waiting reveals resilience.
+
+The Weibull distribution allows us to represent all three within a single flexible structure.
+
+---
+
+:::{admonition} Pitfall: Confusing aging with memorylessness
+:class: pitfall
+
+Not all waiting processes are memoryless.
+
+Before assuming that time does not matter, ask whether the system ages, fatigues, or stabilizes over time.
+
+Elapsed time may carry structural information.
+:::
+
+---
+
+:::{admonition} Exercise: Does Time Change the Risk?
+:class: exercise
+
+Choose one system you are familiar with (a device, a habit, a relationship, a health condition, a skill).
+
+1. Does risk increase, decrease, or remain constant as time passes?
+2. What mechanism explains that change?
+3. Would treating the system as memoryless lead to misjudgment?
+4. How would your strategy differ depending on whether hazard rises or falls?
+
+Explain your reasoning in structural terms, not anecdotal impressions.
+:::
